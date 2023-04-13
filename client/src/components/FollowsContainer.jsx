@@ -79,7 +79,7 @@ const FollowsContainer = ({ option }) => {
                                     )
                                 })
                                 :
-                                <h5>No se han encontrado {option}</h5>
+                                <h5>not found{option}</h5>
                         :
                         <img src={LoadingGif} alt="Cargando ..." />
                     }

@@ -97,7 +97,7 @@ const ChatUsersConnect = ({ usersConnected, contacts,changeChat }) => {
     return (
         <Contenedor>
             <div className="title">
-                <h4>Usuarios en Linea</h4>
+                <h4>Online users</h4>
             </div>
             { users.length === 0 && <OfflineUsers /> }
             <div className="contacts">

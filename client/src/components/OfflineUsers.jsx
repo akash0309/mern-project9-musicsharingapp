@@ -22,7 +22,7 @@ const OfflineUsers = () => {
         <Container >
             {/* Img con un texto */}
             <img src={OfflineImg} alt="offline" />
-            <p>No hay ningún usuario en línea</p>
+            <p>There is no user online</p>
         </Container>
     )
 }

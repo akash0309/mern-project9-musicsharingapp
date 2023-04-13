@@ -39,11 +39,11 @@ const RegistroForm = () => {
             <div className="form-control border-dark my-5 px-4 bg-dark">
                 {loading && <Loader />}
                 <img className='m-3' src={logo} style={{ width: '60px', height: '60px' }} alt="" />
-                <h3 className="text-light">Registro</h3>
+                <h3 className="text-light">Record</h3>
                 <form onSubmit={submitHandler}>
                     <div className="form-floating mt-3">
                         <input disabled={loading} name="nombre" type="text" className={`form-control border-success-subtle ${errors ? errors['nombre'] ? 'is-invalid' : null : null}`} placeholder="Nombre..." onChange={e => { setNombre(e.target.value) }}></input>
-                        <label htmlFor="floatingTextarea2" className="form-label">Nombre:</label>
+                        <label htmlFor="floatingTextarea2" className="form-label">Name:</label>
                         {errors ? errors['nombre'] ?
                             <div id="validationServer03Feedback" className="invalid-feedback">
                                 {errors['nombre']['message']}
@@ -52,7 +52,7 @@ const RegistroForm = () => {
                     </div>
                     <div className="form-floating mt-3">
                         <input name="apellido" disabled={loading} type="text" className={`form-control border-success-subtle ${errors ? errors['apellido'] ? 'is-invalid' : null : null}`} placeholder="Apellido..." onChange={e => { setApellido(e.target.value) }}></input>
-                        <label htmlFor="floatingTextarea2" className="form-label">Apellido:</label>
+                        <label htmlFor="floatingTextarea2" className="form-label">Last Name:</label>
                         {errors ? errors['apellido'] ?
                             <div id="validationServer03Feedback" className="invalid-feedback">
                                 {errors['apellido']['message']}
@@ -72,7 +72,7 @@ const RegistroForm = () => {
 
                     <div className="form-floating mt-3">
                         <input name="pass" disabled={loading} type="password" className={`form-control border-success-subtle ${errors ? errors['password'] ? 'is-invalid' : null : null}`} placeholder="Password..." onChange={e => { setPassword(e.target.value) }} autoComplete="current-password"></input>
-                        <label htmlFor="floatingTextarea2" className="form-label">Contraseña:</label>
+                        <label htmlFor="floatingTextarea2" className="form-label">Password:</label>
                         {errors ? errors['password'] ?
                             <div id="validationServer03Feedback" className="invalid-feedback">
                                 {errors['password']['message']}
@@ -82,7 +82,7 @@ const RegistroForm = () => {
 
                     <div className="form-floating mt-3 mb-3">
                         <input name="cpass" disabled={loading} type="password" className={`form-control border-success-subtle ${errors ? errors['cpass'] ? 'is-invalid' : null : null}`} placeholder="Confirm..." onChange={e => { setCpass(e.target.value) }} autoComplete="current-password"></input>
-                        <label htmlFor="floatingTextarea2" className="form-label">Confirmar Contraseña:</label>
+                        <label htmlFor="floatingTextarea2" className="form-label">Confirm Password:</label>
                         {errors ? errors['cpass'] ?
                             <div id="validationServer03Feedback" className="invalid-feedback">
                                 {errors['cpass']['message']}
@@ -95,9 +95,9 @@ const RegistroForm = () => {
                             disabled={loading} 
                             className="col-4 btn btn-success m-3 mt-0"
                             onClick={() => navigate('/login')}
-                            >Volver
+                            >Return
                         </button>
-                        <button disabled={loading} className="col-4 btn btn-success m-3 mt-0">Registrarse</button>
+                        <button disabled={loading} className="col-4 btn btn-success m-3 mt-0">Check in</button>
                     </div>
                 </form>
             </div>

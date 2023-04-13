@@ -22,9 +22,9 @@ const ComentariosForm = (props) => {
             <form onSubmit={submitHandler}>
                 <div className="form-floating mt-3">
                     <textarea className="form-control border-success-subtle" placeholder="Comentario..." style={{ "height": "100px" }} onChange={e => { setComentario(e.target.value) }}></textarea>
-                    <label htmlFor="floatingTextarea2">Comentario</label>
+                    <label htmlFor="floatingTextarea2">Comment</label>
                 </div>
-                <button className=" btn btn-success mt-3">Comentar</button>
+                <button className=" btn btn-success mt-3">Comment</button>
             </form>
         </>
     );

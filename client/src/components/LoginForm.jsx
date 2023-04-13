@@ -48,16 +48,16 @@ const LoginForm = () => {
 
                 <div className="form-floating mt-3 mb-3">
                     <input name="pass" type="password" disabled={loading} className="form-control border-success-subtle" placeholder="Title..." onChange={e => { setPassword(e.target.value) }} autoComplete="current-password"></input>
-                    <label htmlFor="floatingTextarea2" className="form-label">Contraseña:</label>
+                    <label htmlFor="floatingTextarea2" className="form-label">Password:</label>
                 </div>
                 <div className="row justify-content-between">
                     <button 
                         disabled={loading} 
                         className="col btn btn-success m-3 mt-0"
                         onClick={() => navigate('/registro')}
-                        >Registrarse
+                        >Check in
                     </button>
-                    <button disabled={loading} className="col btn btn-success m-3 mt-0">Loguearse</button>
+                    <button disabled={loading} className="col btn btn-success m-3 mt-0">login</button>
                 </div>
             </form>
         </div>

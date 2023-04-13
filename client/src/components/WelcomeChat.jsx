@@ -30,9 +30,9 @@ const WelcomeChat = () => {
         <Container>
             <img src={Portada} alt="chat animado" />
             <h1>
-                Bienvenido/a <span>{user}!</span>
+            Welcome to <span>{user}!</span>
             </h1>
-            <h3>Por favor, selecciona un chat</h3>
+            <h3>Please select a chat</h3>
         </Container>
     )
 }

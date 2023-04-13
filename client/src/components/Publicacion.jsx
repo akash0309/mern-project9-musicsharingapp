@@ -41,7 +41,7 @@ function Publicacion(props) {
             <div className="row justify-content-between card-footer text-muted">
                 <BotonLike className=" border" stlye={{}} idP={props.idP} cant={props.likes.length}/>
                 {
-                    currentURL.includes('/publicacion')?null:<a className='col text-end text-decoration-none text-success' href={`/publicacion/${props.idP}`}>Ver Publicación</a>
+                    currentURL.includes('/publicacion')?null:<a className='col text-end text-decoration-none text-success' href={`/publicacion/${props.idP}`}>View Post</a>
                 }
                 
             </div>

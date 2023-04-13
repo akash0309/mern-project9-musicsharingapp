@@ -101,11 +101,11 @@ const PublicacionForm = () => {
             <form onSubmit={submitHandler}>
                 <div className={`form-control my-5 border-success text-center bg-light`}>
                     {isEditar ?
-                        <h5 className="my-3 text-success">Editar Publicación</h5>
+                        <h5 className="my-3 text-success">Edit Post</h5>
                         : null}
                     <div className="form-floating my-3">
                         <input  autoComplete="off"  name="cancion" type='search' className="form-control border-success-subtle" placeholder="Canción..." onChange={Searching}></input>
-                        <label htmlFor="floatingTextarea2">Canción</label>
+                        <label htmlFor="floatingTextarea2">Song</label>
 
                     </div>
                     {
@@ -120,13 +120,13 @@ const PublicacionForm = () => {
                         : null}
                     <div className="form-floating mt-3">
                         <textarea value={cuerpo ? cuerpo : ''} className="form-control border-success-subtle" placeholder="Comentario..." style={{ "height": "100px" }} onChange={e => { setCuerpo(e.target.value) }}></textarea>
-                        <label htmlFor="floatingTextarea2">Comentario</label>
+                        <label htmlFor="floatingTextarea2">Comment</label>
                     </div>
                     <div className="row justify-content-evenly mx-1">
                         {isEditar ?
                             <button onClick={() => { navigate(-1) }} className="col-4 btn btn-secondary my-3" >Cancelar</button>
                             : null}
-                        <button className="col-4 btn btn-success my-3">Publicar</button>
+                        <button className="col-4 btn btn-success my-3">Post</button>
                     </div>
                 </div>
             </form>
